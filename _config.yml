@@ -1,7 +1,7 @@
 title:            Matt's Blog
 description:      A place where I can show off my hobby projects
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://mjriley.github.io
+#url:              http://mjriley.github.io
 disqus_shortname:
 
 # Owner/author information
@@ -47,7 +47,7 @@ highlighter:    pygments
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+#permalink:   /:categories/:title/
 
 kramdown:
   auto_ids: true
