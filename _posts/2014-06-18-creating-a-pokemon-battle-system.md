@@ -15,7 +15,7 @@ share:
 ## What's this?
 I played through Pokemon X and then thought -- I can do that! So I made a replica of the Pokemon X battle system in Unity/C#. My initial intentions were to just create something very simple in a few days, but the project quickly morphed into something meant to mimic the actual game as close as possible (including the graphics).
 
-For the TL;DR -- check out the repository [here](https://github.com/mjriley/BattleSystem), and scroll to the bottom to test out the game.
+For the TL;DR -- check out the repository [here](https://github.com/mjriley/BattleSystem), and view the finished game [here](/pokemonx).
 
 ## Surprisingly Complicated
 I finished a workable system in a few days, but I had no idea how complicated the full system would be. There are a lot of mechanics, especially if you're trying to faithfully recreate each pokemon's moves. I suppose my initial impression was that all pokemon just have these basic damage type moves. That's true, but many of those moves have unique corner-cases that make creating a generic framework fairly difficult.
@@ -44,78 +44,3 @@ Again, the intent changed during development. I think my initial idea was just a
 
 ### Always Room for Improvement
 Code never seems truly finished -- there is always something to clean up or refactor. Certainly, that's the case here. As I worked through the proper 'Unity' way to do things, I think the structure of my code flexed quite a bit. I know there are many places in the code right now that could use some love -- some code needs to be rephrased, some of the earlier screens should use different logic, etc. There's always tomorrow...
-
-<script type="text/javascript" src="https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js"></script>
-<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js"></script>
-<script type="text/javascript">
-	<!-- 
-	var config = {
-		width: 400,
-		height: 500,
-		params: { enableDebugging: "0" }
-	};
-
-	var u = new UnityObject2(config);
-
-	jQuery(function() {
-		var $missingScreen = jQuery("#unityPlayer").find(".missing");
-		var $brokenScreen = jQuery("#unityPlayer").find(".broken");
-		
-		$missingScreen.hide();
-		$brokenScreen.hide();
-		
-		u.observeProgress(function(progress) {
-			switch (progress.pluginStatus)
-			{
-				case "broken":
-					$brokenScreen.find("a").click(function(e) {
-						e.stopPropagation();
-						e.preventDefault();
-						u.installPlugin();
-						return false;
-					});
-					$brokenScreen.show();
-					break;
-				case "missing":
-					$missingScreen.find("a").click(function(e) {
-						e.stopPropagation();
-						e.preventDefault();
-						u.installPlugin();
-						return false;
-					});
-					missingScreen.show();
-					break;
-				case "installed":
-					$missingScreen.remove();
-					break;
-				case "first":
-					break;
-			}
-		});
-		u.initPlugin(jQuery("#unityPlayer")[0], "/assets/battleSystem.unity3d");
-	});
-
-
-	-->
-</script>
-
-<style type="text/css">
-<!--
-div#unityPlayer { cursor: default, height: 500px, width: 400px }
--->
-</style>
-
-<div class="content">
-	<div id="unityPlayer">
-		<div class="missing">
-			<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
-				<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63"/>
-			</a>
-		</div>
-		<div class="broken">
-			<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after">
-				<img alt="Unity Web Player. Install now! Restart your browser after" src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63"/>
-			</a>
-		</div>
-	</div>
-</div>
